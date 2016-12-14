@@ -1,0 +1,237 @@
+body {
+  background-color:#CEE3F6;
+  z-index: 10;
+  align: justify;
+  font-family:"Raleway"; 
+}
+
+.outline {
+  padding: 10px;
+  background-color: #1B0A2A;
+ background-image: url("https://wallpaperscraft.com/image/pattern_texture_background_colorful_65885_2560x1440.jpg");
+  background-size: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 280px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: -20px 20px 20px black; 
+  border-color: black;
+  border-style: groove;
+  border-width: 1px;
+  position: relative;
+}
+
+.blue {
+  width: 100px;
+  height: 100px;
+  background-color: #12176F;
+  position: relative;
+}
+
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: #871414;
+  position: relative;
+}
+
+.yellow {
+  width: 100px;
+  height: 100px;
+  background-color: #897B1B;
+  position: relative;
+}
+
+.green {
+  width: 100px;
+  height: 100px;
+  background-color: #1B7E11;
+  position: relative;
+}
+
+.b {
+  border-radius: 20px;
+  margin: 8px;
+  border-color: black;
+  border-width:3px;
+}
+
+.top {
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  display: inline-block;
+}
+
+.centerElem {
+  background-color:black;
+  z-index: 0px;
+  color: black;
+  border-radius: 8px;
+  border-color: black;
+  border-style: solid;
+  border-width:1px;
+  width: 450px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  background-size: 250px;
+  display:inline-block;
+  position:relative;  
+}
+
+.start {
+  width: 140px;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: -5px;
+  margin-right: auto;
+  text-align: top;
+  vertical-align: top;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-size: 18px;
+  background-color: #610B21;
+  border-radius: 9px;
+  border-color: #610B21;
+  font-weight: 900;
+  font-family: "orbitron";
+}
+
+.display {
+  padding: 4px;
+  background-color:#2F552F  ;
+  width: 100px;
+  height: 30px;
+  margin: auto;
+  margin: auto;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "orbitron";  
+  box-shadow: inset -3px 3px 3px black;
+}
+
+.strict {
+  margin-left: -20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border-color:#0E0D32;
+  background-color:#0E0D32;
+  height: 30px;
+  width: 80px;
+  font-weight: bold;
+  font-family:"orbitron";
+  color:gray;
+  position:relative;
+}
+
+.light {
+  padding: 5px;
+  background-color: #620A0E;
+  width: 5px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  margin: auto auto;
+  margin-top: 20px;
+}
+
+.lightstrict {
+  padding: 5px;
+  background-color: #620A0E;
+  width: 3px;
+  height: 3px;
+  margin:3px;  
+  border-radius: 8px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 0px;
+  float: left;
+}
+
+.lighton {
+  background-color: #CD383F;
+}
+
+.bluelight {
+  background-color: #2957CA;
+}
+
+.yellowlight {
+  background-color: yellow;
+}
+
+.greenlight {
+  background-color: #30D328;
+}
+
+.simon {
+  margin-top: 0px;
+  color: #CEE3F6;
+  font-weight: 500;
+  font-family:"orbitron";
+}
+
+input[type="radio"] {
+  display: inline-block;
+  width: 25px;
+  height: 19px;
+  cursor: pointer;
+  -webkit-appearance: square-button;
+  margin: -2px;
+}
+
+.radiobtn{
+  background-color: #1C1C1C;
+  box-shadow: inset -3px 3px 2px black;
+ }
+
+.stron {
+  background-color: gray;
+}
+
+.onof {
+  margin-top: 5px;
+  border-color: #151515;
+  border-style: solid;
+  border-radius:1px;
+  border-width:2px;
+  padding: 2px;
+  width: 54px;
+  height: 23px;
+}
+
+.onoftext {
+  width: 70px;
+  height: 25px;
+  text-align: left;
+  font-weight: bold;
+  margin-left:-5px;
+  color: gray;
+}
+
+.butonof {
+  float: right;
+  margin-right: 30px;
+}
+
+.row2{
+  width:480px;
+  margin:auto auto;
+  margin-left:-10px;
+  position:relative;
+}
+
+.displayon{
+  background-color:green; 
+}
