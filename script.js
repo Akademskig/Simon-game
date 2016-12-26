@@ -11,9 +11,7 @@ $("document").ready(function() {
   var soundError = new Audio("http://soundbible.com/grab.php?id=1327&type=wav");
   var soundError2 = new Audio("http://soundbible.com/grab.php?id=172&type=wav");
   var soundSuccess = new Audio("http://soundbible.com/grab.php?id=1003&type=wav");
-
   // obj variables for strict and on/off
-
   var strict = {
     strictVal: "off"
   };
@@ -23,7 +21,6 @@ $("document").ready(function() {
     startVal: "off"
   };
   // functions
-
   function genNumArr() {
     numArr.push(Math.floor((Math.random() * 4) + 1));
     console.log("Array of nums: " + numArr);
@@ -86,7 +83,7 @@ $("document").ready(function() {
         numArr = [];
         $(".display").html("Noob!");
         window.setTimeout(function() {
-         $(".display").html("00");
+          $(".display").html("00");
         }, 2000)
         window.setTimeout(function() {
           $(".display").html("00");
@@ -114,7 +111,8 @@ $("document").ready(function() {
       window.setTimeout(function() {
         mainFunc(numArr);
       }, 1300)
-    } else if (arr.length == 20 && x == arr.length) {
+    } 
+    else if (arr.length == 20 && x == arr.length) {
       soundSuccess.play();
       turnOnOff.startVal = "off";
       $(".display").html("20!");
@@ -129,15 +127,16 @@ $("document").ready(function() {
       return 0;
     }
   }
+
   function mainFunc(numArr) {
     inputval = [];
     light(numArr, 0);
   }
-//button functions
+  //button functions
   $(".off").on("click", function() {
     turnOnOff.turnonoffVal = "off";
     turnOnOff.startVal = "off";
-    $(".light").removeClass("lighton");
+    $(".lightOnOff").removeClass("lighton");
     $(".display").html("--");
     $(".display").removeClass("displayon");
     $(".off").removeClass("radiobtn").addClass("stron");
@@ -147,14 +146,12 @@ $("document").ready(function() {
 
   $(".on").on("click", function() {
     turnOnOff.turnonoffVal = "on";
-    $(".light").addClass("lighton");
+    $(".lightOnOff").addClass("lighton");
     $(".display").html("00");
-     $(".display").addClass("displayon");
+    $(".display").addClass("displayon");
     $(".on").removeClass("radiobtn").addClass("stron");
     $(".off").removeClass("stron").addClass("radiobtn");
   })
-
-  console.log(strict.strictVal == "off");
 
   $(".strict").on("click", function() {
     if (strict.strictVal == "off") {
@@ -163,14 +160,12 @@ $("document").ready(function() {
       console.log(strict.strictVal);
     }
     if (strict.strictVal == "on") {
-
       $(".lightstrict").removeClass("lighton");
       return strict.strictVal = "off";
     }
   })
 
   $(".start").on("click", function() {
-
     if (turnOnOff.turnonoffVal == "on") {
       $(".display").html("00");
       turnOnOff.startVal = "on";
@@ -178,7 +173,7 @@ $("document").ready(function() {
       numArr = genNumArr();
       inputval = [];
       mainFunc(numArr);
-   }
+    }
   })
 
   $(".blue").on("mousedown", function() {
@@ -189,9 +184,7 @@ $("document").ready(function() {
     }
   })
   $(".blue").on("mouseup", function() {
-
     $(".blue").removeClass("bluelight");
-
   });
 
   $(".red").on("mousedown", function() {
@@ -201,7 +194,6 @@ $("document").ready(function() {
       sound2.play();
     }
   })
-
   $(".red").on("mouseup", function() {
     $(".red").removeClass("lighton");
   });
@@ -229,7 +221,7 @@ $("document").ready(function() {
   });
 
   $(".b").on("click", function() {
-    if (turnOnOff.turnonoffVal == "on" && turnOnOff.startVal == "on")   {
+    if (turnOnOff.turnonoffVal == "on" && turnOnOff.startVal == "on") {
       console.log("input: " + inputval);
       check(inputval, numArr);
     }

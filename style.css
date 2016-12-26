@@ -1,163 +1,166 @@
 body {
-  background-color:#CEE3F6;
-  z-index: 10;
   align: justify;
-  font-family:"Raleway"; 
+  background-color: #CEE3F6;
+  font-family: "Raleway";
 }
 
 .outline {
-  padding: 10px;
-  background-color: #1B0A2A;
- background-image: url("https://wallpaperscraft.com/image/pattern_texture_background_colorful_65885_2560x1440.jpg");
+  background-image: url("https://wallpaperscraft.com/image/pattern_texture_background_colorful_65885_2560x1440.jpg");
   background-size: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
-  height: 280px;
-  margin-top: 200px;
-  margin-bottom: 100px;
-  text-align: center;
+  border: groove 1px black;
   border-radius: 20px;
-  box-shadow: -20px 20px 20px black; 
-  border-color: black;
-  border-style: groove;
-  border-width: 1px;
-  position: relative;
+  box-shadow: -20px 20px 20px black;
+  height: 280px;
+  margin: 200px auto 100px auto;
+  padding: 10px;
+  text-align: center;
+  width: 500px;
+}
+
+
+/**------------------
+MAIN BUTTONS
+------------------**/
+
+.blue,
+.red,
+.yellow,
+.green {
+  border: solid 3px black;
+  border-radius: 20px;
+  height: 100px;
+  margin: 8px;
+  width: 100px;
 }
 
 .blue {
-  width: 100px;
-  height: 100px;
   background-color: #12176F;
-  position: relative;
 }
 
 .red {
-  width: 100px;
-  height: 100px;
   background-color: #871414;
-  position: relative;
 }
 
 .yellow {
-  width: 100px;
-  height: 100px;
   background-color: #897B1B;
-  position: relative;
 }
 
 .green {
-  width: 100px;
-  height: 100px;
   background-color: #1B7E11;
-  position: relative;
 }
 
-.b {
-  border-radius: 20px;
-  margin: 8px;
-  border-color: black;
-  border-width:3px;
-}
 
-.top {
-  position:relative;
-  margin-left:auto;
-  margin-right:auto;
-  display: inline-block;
-}
+/**----------------------
+  COMMAND BOARD
+---------------------**/
 
 .centerElem {
-  background-color:black;
-  z-index: 0px;
-  color: black;
+  background: black;
   border-radius: 8px;
-  border-color: black;
-  border-style: solid;
-  border-width:1px;
-  width: 450px;
+  color: black;
   height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  background-size: 250px;
-  display:inline-block;
-  position:relative;  
+  margin: 10px auto 5px auto;
+  width: 450px;
 }
 
 .start {
-  width: 140px;
-  height: 35px;
-  margin-top: 10px;
-  margin-left: -5px;
-  margin-right: auto;
-  text-align: top;
-  vertical-align: top;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  font-size: 18px;
   background-color: #610B21;
-  border-radius: 9px;
   border-color: #610B21;
-  font-weight: 900;
-  font-family: "orbitron";
+  border-radius: 9px;
+  font: 18px "Orbitron";
+  height: 35px;
+  margin: 10px auto 0px -8px;
+  width: 140px;
 }
 
 .display {
-  padding: 4px;
-  background-color:#2F552F  ;
-  width: 100px;
-  height: 30px;
-  margin: auto;
-  margin: auto;
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 15px;
-  font-family: "orbitron";  
+  background-color: #2F552F;
   box-shadow: inset -3px 3px 3px black;
+  font: 15px "Orbitron";
+  height: 30px;
+  margin: 5px auto 15px auto;
+  padding: 4px;
+  text-align: center;
+  width: 100px;
 }
 
 .strict {
-  margin-left: -20px;
-  margin-top: 30px;
+  background-color: #0E0D32;
+  border-color: #0E0D32;
   border-radius: 5px;
-  border-color:#0E0D32;
-  background-color:#0E0D32;
+  color: #CEE3F6;
   height: 30px;
-  width: 80px;
   font-weight: bold;
-  font-family:"orbitron";
-  color:gray;
-  position:relative;
-}
-
-.light {
-  padding: 5px;
-  background-color: #620A0E;
-  width: 5px;
-  border-radius: 10px;
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  margin: auto auto;
-  margin-top: 20px;
+  font-family: "orbitron";
+  margin: 30px 0 0 -20px;
+  width: 80px;
 }
 
 .lightstrict {
-  padding: 5px;
   background-color: #620A0E;
-  width: 3px;
-  height: 3px;
-  margin:3px;  
+  border: solid 1px black;
   border-radius: 8px;
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  margin-left: 0px;
   float: left;
+  height: 3px;
+  margin: 3px;
+  margin-left: -2px;
+  padding: 5px;
+  width: 3px;
 }
+
+.butonof {
+  float: right;
+  margin-right: 20px;
+}
+
+.lightOnOff {
+  background-color: #620A0E;
+  border: solid, 1px, black;
+  border-radius: 10px;
+  margin: 20px auto 0 auto;
+  padding: 5px;
+  width: 5px;
+}
+
+.onof {
+  border: solid 2px #151515;
+  border-radius: 1px;
+  height: 23px;
+  margin-top: 5px;
+  padding: 2px;
+  width: 54px;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+  height: 19px;
+  margin: -2px;
+  width: 25px;
+  -webkit-appearance: square-button;
+}
+
+.radiobtn {
+  background-color: #1C1C1C;
+  box-shadow: inset -3px 3px 2px black;
+}
+
+.stron {
+  background-color: gray;
+}
+
+.onoftext {
+  color: #CEE3F6;
+  height: 25px;
+  font-weight: bold;
+  margin-left: -5px;
+  text-align: left;
+  width: 70px;
+}
+
+
+/**------------
+LIGHTS
+---------------**/
 
 .lighton {
   background-color: #CD383F;
@@ -175,63 +178,17 @@ body {
   background-color: #30D328;
 }
 
+.displayon {
+  background-color: green;
+}
+
+
+/**----------------------------------**/
+
 .simon {
   margin-top: 0px;
   color: #CEE3F6;
   font-weight: 500;
-  font-family:"orbitron";
-}
-
-input[type="radio"] {
-  display: inline-block;
-  width: 25px;
-  height: 19px;
-  cursor: pointer;
-  -webkit-appearance: square-button;
-  margin: -2px;
-}
-
-.radiobtn{
-  background-color: #1C1C1C;
-  box-shadow: inset -3px 3px 2px black;
- }
-
-.stron {
-  background-color: gray;
-}
-
-.onof {
-  margin-top: 5px;
-  border-color: #151515;
-  border-style: solid;
-  border-radius:1px;
-  border-width:2px;
-  padding: 2px;
-  width: 54px;
-  height: 23px;
-}
-
-.onoftext {
-  width: 70px;
-  height: 25px;
-  text-align: left;
-  font-weight: bold;
-  margin-left:-5px;
-  color: gray;
-}
-
-.butonof {
-  float: right;
-  margin-right: 30px;
-}
-
-.row2{
-  width:480px;
-  margin:auto auto;
-  margin-left:-10px;
-  position:relative;
-}
-
-.displayon{
-  background-color:green; 
+  font-family: "orbitron";
+  text-shadow: 2px 2px 2px black;
 }
